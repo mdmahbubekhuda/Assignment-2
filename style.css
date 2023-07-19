@@ -1,3 +1,71 @@
-h1{
-    color: aqua;
+/* shared-start */
+* {
+    max-width: 1440px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared-end */
+/* navigation-start */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-title,
+nav>ul,
+nav>ul>li:last-child {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+}
+
+nav>ul>li {
+    list-style: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+nav h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+nav h1>span {
+    color: #FF42A5;
+}
+
+nav>ul>li:last-child {
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 1.5rem;
+}
+
+/* navigation-end */
+
+
+/* media query - mobile devices */
+@media screen and (max-width: 576px) {
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* media query - tablet devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
