@@ -72,16 +72,21 @@ nav>ul>li {
     font-weight: 500;
 }
 
-nav>ul>li>a {
+nav>ul>li>a,
+.btn-primary a,
+.footer-links a,
+.footer-policy a {
     text-decoration: none;
 }
 
-nav h1 {
+nav h1,
+.footer-title {
     font-size: 2rem;
     font-weight: 700;
 }
 
-nav h1>span {
+nav h1>span,
+.footer-title>span {
     color: #FF42A5;
 }
 
@@ -305,7 +310,8 @@ nav>ul>li:last-child {
     width: 20%;
 }
 
-.game-category-container li {
+.game-category-container li,
+.footer-links li {
     list-style: none;
 }
 
@@ -327,8 +333,37 @@ nav>ul>li:last-child {
 
 /* game-category-end */
 /* footer-start */
-footer{
+footer {
     background: #0B0223;
+    text-align: center;
+}
+
+.footer-title-container,
+.footer-links,
+.footer-social-links,
+.footer-policy {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0;
+}
+
+.footer-title-container>img {
+    width: 4rem;
+    height: fit-content;
+}
+
+.footer-title,
+.footer-text-color,
+.footer-links a,
+.footer-policy a,
+footer p {
+    color: #FFF;
+}
+
+footer p {
+    padding-bottom: 1.5rem;
 }
 
 /* footer-end */
@@ -380,6 +415,15 @@ footer{
     .feature-img-container img {
         width: 80%;
         padding-left: 20%;
+    }
+
+    footer, .footer-links, .footer-social-links, .footer-policy {
+        padding: 0 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
     }
 
 }
