@@ -417,7 +417,11 @@ footer p {
         padding-left: 20%;
     }
 
-    footer, .footer-links, .footer-social-links, .footer-policy {
+    .game-category-container,
+    footer,
+    .footer-links,
+    .footer-social-links,
+    .footer-policy {
         padding: 0 3rem;
         display: flex;
         flex-wrap: wrap;
@@ -433,5 +437,15 @@ footer p {
     nav {
         flex-direction: column;
         align-items: center;
+    }
+    .btn-primary{
+        padding: 0.8rem 1.8rem;       
+    }
+    .banner-container {
+        gap: 0;
+    }
+
+    .banner-content {
+        padding-left: 0;    
     }
 }
