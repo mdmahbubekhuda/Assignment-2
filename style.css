@@ -52,16 +52,15 @@ body {
 
 .game-category-container li,
 .banner-content li,
-.careers-grid-item-2,
-.careers-grid-item-3,
-.footer-links li {
+.careers-grid-item-2 li,
+.careers-grid-item-3 li,
+footer li {
     list-style: none;
 }
 
 nav>ul>li>a,
 .btn-primary a,
-.footer-links a,
-.footer-policy a {
+footer a {
     text-decoration: none;
 }
 
